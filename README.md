@@ -14,6 +14,14 @@ from Fraktale.SinusAdapter import *
 FarbadapterSin(anteile=SinusFarbanteil(-0.99999, -1.12, 2.32))
 ```
 
+![Juliamenge -0.125925925925926-0.8629629629629632i](doc/julia_-0.125925925925926-0.8629629629629632i_1.953125_1.25.jpg)
+
+Juliamenge zur komplexen Zahl -0.125925925925926-0.8629629629629632i.
+
+![Juliamenge 0.3740740740740742-0.12592592592592577i](doc/julia_0.3740740740740742-0.12592592592592577i_1.5625_1.25.jpg)
+
+Juliamenge zur komplexen Zahl 0.3740740740740742-0.12592592592592577i.
+
 ## Welten
 
 Eine Welt beschreibt die Berechnungsvorschrift für ein Fraktal.
