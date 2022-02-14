@@ -3,3 +3,7 @@
 venv/
 img/
 Fraktale.egg-info/
+fraktale.spec
+fraktale_version_info.txt
+build/
+dist/

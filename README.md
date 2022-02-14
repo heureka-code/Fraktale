@@ -22,6 +22,10 @@ Juliamenge zur komplexen Zahl -0.125925925925926-0.8629629629629632i.
 
 Juliamenge zur komplexen Zahl 0.3740740740740742-0.12592592592592577i.
 
+![Juliamenge -0.674074074074074+0.3407407407407408i](doc/julia_-0.674074074074074+0.3407407407407408i_1.0_1.25.jpg)
+
+Juliamenge zur komplexen Zahl -0.674074074074074+0.3407407407407408i
+
 ## Welten
 
 Eine Welt beschreibt die Berechnungsvorschrift für ein Fraktal.
