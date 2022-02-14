@@ -11,7 +11,7 @@ def make(welt_cls: type[FraktalWelt],
          treiber_cls: type[BasisTreiber],
          adapter: BasisFarbadapter,
          width: int, height: int,
-         max_iter: int = 255, c: complex = None):
+         max_iter: int = 255, c: complex = None, f=None):
     assert issubclass(welt_cls, FraktalWelt)
     assert issubclass(treiber_cls, BasisTreiber)
     assert isinstance(adapter, BasisFarbadapter)
@@ -23,14 +23,14 @@ def make(welt_cls: type[FraktalWelt],
         assert c is None, "Bei der Mandelbrotmenge darf c nicht gesetzt sein"
         welt = welt_cls(width, height, max_iter)
     else:
-        welt = welt_cls(screen_width=width, screen_height=height, max_iter=max_iter, c=c)
+        welt = welt_cls(screen_width=width, screen_height=height, max_iter=max_iter, c=c, f=f)
     treiber = treiber_cls(width, height, welt, adapter)
     return treiber
 
 
 def make_tkinter(welt_cls: type[FraktalWelt],
                  adapter: BasisFarbadapter,
-                 width: int, height: int, max_iter: int = 255, c=None) -> TkinterTreiber:
-    res = make(welt_cls, TkinterTreiber, adapter, width, height, max_iter, c=c)
+                 width: int, height: int, max_iter: int = 255, c=None, f=None) -> TkinterTreiber:
+    res = make(welt_cls, TkinterTreiber, adapter, width, height, max_iter, c=c, f=f)
     res.start_loop()
     return res

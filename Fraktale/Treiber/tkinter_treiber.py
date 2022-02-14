@@ -43,7 +43,7 @@ class TkinterTreiber(BasisTreiber):
         finally:
             xy_prefix += f"{self._pointer_coordinates}"
         self._pil_img.save(
-            "img/" + f"{'mandelbrot' if isinstance(self.welt, MandelbrotWelt) else ''}{xy_prefix}{zoom_suffix}.png")
+            "img/" + f"{'mandelbrot' if isinstance(self.welt, MandelbrotWelt) else ''}{xy_prefix}{zoom_suffix}.jpg")
 
     def _show_julia(self):
         if isinstance(self.welt, MandelbrotWelt):

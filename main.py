@@ -11,5 +11,5 @@ if __name__ == "__main__":
         pass
     treiber = make_tkinter(Welten.JuliaWelt,
                            GraustufenFarbadapter(),
-                           1080, 1080, c=0.3222222222222224+0.5666666666666667j)
+                           1080, 1080, c=0.3222222222222224+0.5666666666666667j, f=lambda z, c: z ** 2 + c)
     treiber.start_loop()

@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 from Fraktale.achsen import Achse
-
 import numpy as np
 
 
