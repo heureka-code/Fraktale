@@ -1,15 +1,12 @@
-from Fraktale import make_tkinter, Welten, Treiber
-from Fraktale.Farbadapter.SinusAdapter import *
+from Fraktale import make_tkinter, Welten
 from Fraktale.Farbadapter import GraustufenFarbadapter
-from os import mkdir
+from Fraktale.Farbadapter import SinusAdapter
 
 
 if __name__ == "__main__":
-    try:
-        mkdir("img")
-    except FileExistsError:
-        pass
-    treiber = make_tkinter(Welten.JuliaWelt,
-                           GraustufenFarbadapter(),
-                           1080, 1080, c=0.3222222222222224+0.5666666666666667j, f=lambda z, c: z ** 2 + c)
+    treiber = make_tkinter(
+        Welten.MandelbrotWelt,
+        SinusAdapter.FarbadapterSin(anteile=SinusAdapter.SinusFarbanteil(-0.99999, -1.12, 2.32)),
+        1080, 1080
+    )
     treiber.start_loop()

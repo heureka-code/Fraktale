@@ -6,10 +6,16 @@ from PIL import Image, ImageTk
 from Fraktale.Treiber.basis_treiber import BasisTreiber
 from Fraktale.Welten.basis_welt import FraktalWelt
 from Fraktale.Welten import MandelbrotWelt, JuliaWelt
+from os import mkdir
 
 
 class TkinterTreiber(BasisTreiber):
     def __init__(self, screen_width: int, screen_height: int, welt, farbadapter):
+        try:
+            mkdir("img")
+        except FileExistsError:
+            pass
+
         super(TkinterTreiber, self).__init__(screen_width, screen_height, welt, farbadapter)
         self._zoom_number = 0
         self._zoom_factor = 1.25
