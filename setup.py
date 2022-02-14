@@ -6,12 +6,12 @@ with open(path.join(this_directory, "README.md"), encoding="utf-8") as f:
 
 setuptools.setup(
     name="Fraktale",
-    version="0.0.1",
+    version="1.0.0",
     author="heureka-code",
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="MIT",
-    description="Darstellung und Berechnung von Fraktalen",
+    description="Darstellung und Berechnung von Juliamengen und der Mandelbrotmenge",
     install_requires=["pillow", "numpy"],
     packages=setuptools.find_packages()
     )
